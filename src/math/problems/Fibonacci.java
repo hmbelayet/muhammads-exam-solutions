@@ -12,7 +12,7 @@ Write 40 Fibonacci numbers with java.
             a = b;
             b = c;
             c = a + b;
-            System.out.print(a+" ");
+            System.out.print(a+", ");
         }
 
     }

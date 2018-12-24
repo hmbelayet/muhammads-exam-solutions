@@ -73,7 +73,7 @@ A.  A package is a namespace that organizes a set of related
 
 What is API? Name list of API that you have used so far.
 A. Application programing interface
-    eclipse and intellij
+    //eclipse and intellij
 
 Does java support multiple inheritance, explain why or why not?
 A. Multiple inheritance is basically not allowed in Java
@@ -237,7 +237,6 @@ What is Framework?
 in a specific domain
 
 What are the testing Framework available in java? j
-    unit, rest assured selenium testng
 
 Difference between jUnit and testNG?
     TestNG supports parallel testing, while JUnit does not have such a feature.
