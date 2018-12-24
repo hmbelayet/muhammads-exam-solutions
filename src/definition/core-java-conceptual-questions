@@ -2,7 +2,8 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-A. java is a programing language used to communitcate with software
+A. A programming language is a formal language, which comprises a set of instructions used to produce various kinds of
+ iuoutput. Programming languages are used in computer programming to create programs that implement specific algorithms.
 
 What jdk contains or composed of and define each components?
 A. The Runtime Interpreter - a stand-alone version of the Java interpreter built into the HotJava browser. The runtime
@@ -19,7 +20,6 @@ What are the IDEs available in the market to support java?
 A. Netbeans eclipse intellij bluej jDeveloper
 
 Explain the entire java life cycle.
-
 A new thread begins its life cycle in the new state. It remains in this state
 until the program starts the thread. It is also referred to as a born thread.
 
@@ -73,7 +73,7 @@ A.  A package is a namespace that organizes a set of related
 
 What is API? Name list of API that you have used so far.
 A. Application programing interface
-    //eclipse and intellij
+    String, data structures, arraylist, list, math class, linkedlist, scanner .....
 
 Does java support multiple inheritance, explain why or why not?
 A. Multiple inheritance is basically not allowed in Java
@@ -248,12 +248,12 @@ Difference between jUnit and testNG?
     JUnit is not able to support special annotations that TestNG can.
 
 What are the dependencies for this project?
-   java json, javax-json, mongo JD, mysql testng
+   java, json, javax-json, mongo JD, mysql, testng
 
 what is dependency injection in java?
     dependency injection is a technique whereby one object or static method supplies
 the dependencies of another object.
 
 What is static binding and dynamic binding?
-    Static binding in Java occurs during compile time while dynamic binding
-occurs during runtime.
+    mathod over loading is known as Static binding and mathod overriding is known as dynamic binding.
+    static binding in Java occurs during compile time while dynamic binding occurs during runtime.
