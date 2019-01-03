@@ -6,7 +6,7 @@ import java.util.Random;
 /*
  *Created by mrahman on 04/02/2018.
  */
-public class Numbers {
+public class Numbers{
 	/*
 	 * Show all the different kind of sorting algorithm by applying into (num array).
 	 * Display the execution time for each sorting.Example in below.
@@ -26,11 +26,11 @@ public class Numbers {
 		Sort algo = new Sort();
 		algo.selectionSort(num);
 		long selectionSortExecutionTime = algo.executionTime;
-<<<<<<< HEAD
+<<<<<< HEAD
 		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort: " + selectionSortExecutionTime + " milli sec");
 =======
 		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
->>>>>>> 61d093bb7a3917ccfad39387b269d622ff7d7117
+>>>>>> 61d093bb7a3917ccfad39387b269d622ff7d7117
 		connectToSqlDB.insertDataFromArrayToSqlTable(num, "selection_sort", "SortingNumbers");
 		List<String> numbers = connectToSqlDB.readDataBase("selection_sort", "SortingNumbers");
 		printValue(numbers);
@@ -98,7 +98,6 @@ public class Numbers {
 =======
 		System.out.println("Total Execution Time of " + num.length + " numbers in Heap Sort take: " + heapSortExecutionTime + " milli sec");
 >>>>>>> 61d093bb7a3917ccfad39387b269d622ff7d7117
-
 		//Bucket Sort
 		randomize (num, n);
 
@@ -108,7 +107,6 @@ public class Numbers {
 =======
 		System.out.println("Total Execution Time of "+ num.length + " numbers in BucketSort take: " + algo.executionTime + " milli sec");
 >>>>>>> 61d093bb7a3917ccfad39387b269d622ff7d7117
-
 		//Shell Sort
 		randomize (num, n);
 
@@ -122,16 +120,13 @@ public class Numbers {
 
 		//Come to conclusion about which Sorting Algo is better in given data set.
 		//Bucket Sort is better in given data set.
-
 	}
-
 	public static void storeRandomNumbers(int [] num){
 		Random rand = new Random();
 		for(int i=0; i<num.length; i++){
 			num[i] = rand.nextInt(1000000);
 		}
 	}
-
 	public static void randomize( int arr[], int n)
 	{
 		Random r = new Random();
