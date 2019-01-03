@@ -177,6 +177,7 @@ public class Sort {
         int largest = i;
         int l = 2 * i + 1;
         int r = 2 * i + 2;
+<<<<<<< HEAD
 
         if (l < n && list[l] > list[largest])
             largest = l;
@@ -185,6 +186,16 @@ public class Sort {
         if (r < n && list[r] > list[largest])
             largest = r;
 
+=======
+
+        if (l < n && list[l] > list[largest])
+            largest = l;
+
+
+        if (r < n && list[r] > list[largest])
+            largest = r;
+
+>>>>>>> 61d093bb7a3917ccfad39387b269d622ff7d7117
         if (largest != i) {
             int swap = list[i];
             list[i] = list[largest];
@@ -199,6 +210,7 @@ public class Sort {
         int[] list = array;
         //implement here
         int n = list.length;
+<<<<<<< HEAD
 
         for (int i = n / 2 - 1; i >= 0; i--)
             heapify(list, n, i);
@@ -208,6 +220,17 @@ public class Sort {
             list[0] = list[i];
             list[i] = temp;
 
+=======
+
+        for (int i = n / 2 - 1; i >= 0; i--)
+            heapify(list, n, i);
+
+        for (int i = n - 1; i >= 0; i--) {
+            int temp = list[0];
+            list[0] = list[i];
+            list[i] = temp;
+
+>>>>>>> 61d093bb7a3917ccfad39387b269d622ff7d7117
             heapify(list, i, 0);
         }
 
@@ -216,6 +239,7 @@ public class Sort {
         this.executionTime = executionTime;
         return list;
     }
+<<<<<<< HEAD
 
     public int[] bucketSort(int[] array, int maxValue) {
         final long startTime = System.currentTimeMillis();
@@ -256,6 +280,48 @@ public class Sort {
             }
         }
 
+=======
+    
+    public int[] bucketSort(int[] array, int maxValue) {
+        final long startTime = System.currentTimeMillis();
+        //implement here
+
+        int[] bucket = new int[maxValue + 1];
+        int[] sortedArray = new int[array.length];
+
+        for (int i = 0; i < array.length; i++) {
+            bucket[array[i]]++;
+        }
+        int op = 0;
+        for (int i = 0; i < bucket.length; i++)
+            for (int j = 0; j < bucket[i]; j++)
+                sortedArray[op++] = i;
+
+
+        final long endTime = System.currentTimeMillis();
+        final long executionTime = endTime - startTime;
+        this.executionTime = executionTime;
+        return sortedArray;
+    }
+
+    public int[] shellSort(int[] array) {
+        final long startTime = System.currentTimeMillis();
+        int[] list = array;
+        //implement here
+        int n = list.length;
+
+        for (int gap = n / 2; gap > 0; gap /= 2) {
+            for (int i = gap; i < n; i += 1) {
+                int temp = list[i];
+                int j;
+                for (j = i; j >= gap && list[j - gap] > temp; j -= gap) {
+                    list[j] = list[j - gap];
+                }
+                list[j] = temp;
+            }
+        }
+
+>>>>>>> 61d093bb7a3917ccfad39387b269d622ff7d7117
         final long endTime = System.currentTimeMillis();
         final long executionTime = endTime - startTime;
         this.executionTime = executionTime;

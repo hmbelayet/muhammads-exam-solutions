@@ -2,7 +2,12 @@ package algorithm;
 import org.testng.Assert;
 
 public class UnitTestSorting {
+<<<<<<< HEAD
     /*
+=======
+
+    /*z
+>>>>>>> 61d093bb7a3917ccfad39387b269d622ff7d7117
       This class is about Unit testing for Sorting Algorithm.
      */
     public static void main(String[] args) {
